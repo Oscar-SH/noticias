@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { NoticiasService } from 'src/app/services/noticias.service';
-import { Article } from 'src/app/intefaces/interfaces';
+import { NoticiasService } from '../../services/noticias.service';
+// @ts-ignore
+import { Article } from '../../intefaces/interfaces';
+
 
 @Component({
   selector: 'app-tab1',
@@ -17,7 +19,7 @@ export class Tab1Page implements OnInit{
     this.noticiasService.getTopHeadlines().subscribe(
       resp => {
         console.log('noticias', resp);
-        this.noticias.push( ...resp.articles );
+        this.noticias.push (...resp.articles );
       }
     );
   }

@@ -1,0 +1,5 @@
+<ion-grid>
+  <ion-col *ngFor="let noticia of noticias; let i = index">
+    <app-noticia [noticia]="noticia" [indice]="i"></app-noticia>
+  </ion-col>
+</ion-grid>

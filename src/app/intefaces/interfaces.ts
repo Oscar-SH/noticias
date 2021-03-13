@@ -4,7 +4,7 @@ interface RespuestaTopHeadlines {
   articles: Article[];
 }
 
-interface Article {
+export interface Article {
   source: Source;
   author?: string;
   title: string;

@@ -1,20 +1,11 @@
 <ion-header [translucent]="true">
-    <ion-toolbar>
+    <ion-toolbar color="tertiary">
         <ion-title>
             <center><b>NOTICIAS</b></center>
         </ion-title>
     </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-    <ion-grid>
-        <ion-col>
-            <ion-card>
-                <ion-card-header>
-                    <ion-card-title>Card Title</ion-card-title>
-                    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                </ion-card-header>
-            </ion-card>
-        </ion-col>
-    </ion-grid>
+<ion-content color="dark" [fullscreen]="true">
+  <app-noticias [noticias]="noticias"></app-noticias>
 </ion-content>
